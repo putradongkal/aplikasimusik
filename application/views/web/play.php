@@ -134,6 +134,25 @@
                 </div>
             </div>
 
+            <div class="container">
+            <form action="<?= base_url('carimusikmu')?>" method="get">
+
+            <div class="row">
+            <div class="form-group row col-md-6">
+                    <input type="text" class="form-control col-md-4 mt-1 border-secondary" name="cari" placeholder="cari lagu di sini">
+                   
+                   <button class="btn btn-secondary mt-1"><i class="fa fa-search">search</i></button>
+                   
+                
+              
+               </div>
+               
+            </div>
+               
+            </form>
+
+            </div>
+
             <div class="row oneMusic-albums">
 
                 <!-- Single Album -->
@@ -142,7 +161,7 @@
                 <?php foreach($sound as $s):?>
                 <div class="col-12 col-sm-3 col-md-3 col-lg-3 single-album-item <?= $s->judul[0]?>">
                     <div class="single-album">
-                        <img src="<?= base_url('assets/web/')?>img/bg-img/a2.jpg" alt="">
+                    <img src="https://img.icons8.com/ios/150/000000/google-play-music.png"/>
                         <div class="album-info">
                             <a href="#">
                                 <h5><?= $s->judul?></h5>

@@ -15,4 +15,11 @@ class Home extends CI_Controller{
         $data['sound']= $this->M_sound->get_sound();
         $this->load->view('web/play',$data);
     }
+
+    public function hasil(){
+        $this->load->model('M_album');
+        $data['sound']= $this->M_album->cari();
+        $this->load->view('web/play',$data);
+
+    }
 }
